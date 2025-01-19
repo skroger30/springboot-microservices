@@ -6,7 +6,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.example.employeeservice.dto.DepartmentDto;
 
-@FeignClient(url = "http://localhost:8080", value = "DEPARTMENT-SERVICE")
+//@FeignClient(url = "http://localhost:8080", value = "DEPARTMENT-SERVICE")
+// To switch URL dynamically.
+@FeignClient(name = "DEPARTMENT-SERVICE")
 public interface ApiClient {
 
 //	Get Department REST API
