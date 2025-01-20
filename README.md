@@ -18,5 +18,5 @@ DB : MySQL workbench 8
 	• Load-balancing : running multiple instances of same services with dynamic API calling.
 	• Implemented API Gateway 
 	• Implemented Centralized Repo to register configs of all the services at one location.
-![image](https://github.com/user-attachments/assets/48930ed0-d7d1-48b1-8dac-32fd77caac0e)
+
 
