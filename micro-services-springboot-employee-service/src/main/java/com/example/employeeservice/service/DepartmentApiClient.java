@@ -9,11 +9,11 @@ import com.example.employeeservice.dto.DepartmentDto;
 //@FeignClient(url = "http://localhost:8080", value = "DEPARTMENT-SERVICE")
 // To switch URL dynamically.
 @FeignClient(name = "DEPARTMENT-SERVICE")
-public interface ApiClient {
+public interface DepartmentApiClient {
 
 //	Get Department REST API
 //	http://localhost:8080/api/departments/{code}
 	@GetMapping("/api/departments/{department-code}")
 	public DepartmentDto getDepartment(@PathVariable("department-code")  String departmentCode);
-
+	
 }
